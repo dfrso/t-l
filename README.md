@@ -173,3 +173,8 @@ Made with ❤️ using Vue.js
 
 **Note:** Ini adalah clone untuk tujuan pembelajaran. Desain dan konsep milik Telegram.
 
+🚀 Coba Sekarang:
+Upload gambar ke folder public/
+Edit baris 84 di App.vue
+Refresh browser
+Mau saya buatkan contoh dengan placeholder image dulu? 🖼

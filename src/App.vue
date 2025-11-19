@@ -30,8 +30,9 @@
       <div class="tgme_page">
         <!-- Channel Avatar -->
         <div class="channel-avatar">
-          <div class="avatar-placeholder">
-            <svg width="122" height="122" viewBox="0 0 122 122">
+          <a href="#">
+            <img v-if="channelAvatar" class="tgme_page_photo_image" :src="channelAvatar" :alt="channelName">
+            <svg v-else width="122" height="122" viewBox="0 0 122 122" class="tgme_page_photo_image">
               <defs>
                 <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="0%" y2="100%">
                   <stop offset="0%" style="stop-color:#ff885e;stop-opacity:1" />
@@ -43,7 +44,7 @@
                 {{ channelInitial }}
               </text>
             </svg>
-          </div>
+          </a>
         </div>
 
         <!-- Channel Info -->
@@ -80,6 +81,7 @@ export default {
   setup() {
     const channelName = ref('Testing')
     const memberCount = ref('1 subscriber')
+    const channelAvatar = ref('https://i.pravatar.cc/256?img=12') // Placeholder image - ganti dengan path gambar Anda
 
     const channelInitial = computed(() => {
       return channelName.value.charAt(0).toUpperCase()
@@ -112,6 +114,7 @@ export default {
     return {
       channelName,
       memberCount,
+      channelAvatar,
       channelInitial,
       handleJoin,
       handleOpenWeb
@@ -201,22 +204,24 @@ a.tgme_head_right_btn:active {
   padding-bottom: 16px;
 }
 
-.avatar-placeholder {
+.channel-avatar a {
   display: inline-block;
+  text-decoration: none;
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
 
-.avatar-placeholder:hover {
+.channel-avatar a:hover {
   transform: scale(1.03);
 }
 
-.avatar-placeholder svg {
+.tgme_page_photo_image {
   display: block;
   width: 122px;
   height: 122px;
   border-radius: 61px;
+  object-fit: cover;
 }
 
 /* Channel Info */
@@ -335,7 +340,7 @@ a.tgme_head_right_btn:active {
     margin-top: 0;
   }
 
-  .avatar-placeholder svg {
+  .tgme_page_photo_image {
     width: 110px;
     height: 110px;
     border-radius: 55px;
