@@ -1,0 +1,37 @@
+/* CSS Variables - Telegram Dark Theme */
+:root {
+  --text-color: #fff;
+  --accent-btn-color: #1c93e3;
+  --accent-color-hover: #1a8ad5;
+  --body-bg: #0a0a0a;
+  --box-bg: #1e1e1e;
+  --box-bg-blured: #1d1d1d;
+  --tme-logo-color: #fff;
+  --second-text-color: #7d7f81;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--body-bg);
+  color: var(--text-color);
+}
+
+/* No transition on load */
+body.no_transition,
+body.no_transition * {
+  transition: none !important;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
