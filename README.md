@@ -2,18 +2,18 @@
 
 Clone halaman invite Telegram yang dibuat menggunakan Vue.js dengan desain modern dan responsif.
 
-## ✨ Fitur
+##  Fitur
 
-- 🎨 Desain modern persis seperti Telegram asli (Dark Theme)
-- 📱 Responsive untuk semua ukuran layar
-- ⚡ Animasi smooth dan interaktif
-- 🎯 UI/UX yang intuitif
-- 💫 Background pattern asli dari Telegram ([pattern.svg](https://telegram.org/img/tgme/pattern.svg?1))
-- 🎨 Header navigation dengan **logo Telegram 2019** (official) dan tombol download
-- 🌗 Dark mode dengan card styling yang authentic
-- ✨ Logo Telegram dengan gradient klasik (#2AABEE → #229ED9)
+-  Desain modern persis seperti Telegram asli (Dark Theme)
+-  Responsive untuk semua ukuran layar
+-  Animasi smooth dan interaktif
+-  UI/UX yang intuitif
+-  Background pattern asli dari Telegram ([pattern.svg](https://telegram.org/img/tgme/pattern.svg?1))
+-  Header navigation dengan **logo Telegram 2019** (official) dan tombol download
+-  Dark mode dengan card styling yang authentic
+-  Logo Telegram dengan gradient klasik (#2AABEE → #229ED9)
 
-## 🚀 Cara Menggunakan
+##  Cara Menggunakan
 
 ### Instalasi Dependencies
 
@@ -41,7 +41,7 @@ pnpm build
 pnpm preview
 ```
 
-## 📁 Struktur Project
+##  Struktur Project
 
 ```
 telegram-invite-clone/
@@ -58,7 +58,7 @@ telegram-invite-clone/
 └── README.md           # Dokumentasi
 ```
 
-## 🎨 Kustomisasi
+##  Kustomisasi
 
 Anda dapat mengkustomisasi konten channel dengan mengubah nilai di `src/App.vue`:
 
@@ -123,13 +123,13 @@ Atau customize warna gradient logo di `src/App.vue`:
 </linearGradient>
 ```
 
-## 🛠️ Teknologi
+##  Teknologi
 
 - **Vue.js 3** - Progressive JavaScript Framework
 - **Vite** - Next Generation Frontend Tooling
 - **CSS3** - Modern styling dengan animations
 
-## 📱 Preview Fitur
+##  Preview Fitur
 
 1. **Join Button** - Tombol utama untuk bergabung ke channel
 2. **Preview Channel** - Tombol untuk melihat preview channel
@@ -137,7 +137,7 @@ Atau customize warna gradient logo di `src/App.vue`:
 4. **Hover Effects** - Interaksi smooth pada semua elemen
 5. **Floating Animation** - Logo Telegram dengan animasi mengambang
 
-## 🎯 Cara Mengintegrasikan dengan Backend
+##  Cara Mengintegrasikan dengan Backend
 
 Untuk menggunakan data dinamis dari backend:
 
@@ -161,16 +161,7 @@ setup() {
 }
 ```
 
-## 📝 Lisensi
-
-Free to use for personal and commercial projects.
-
-## 👨‍💻 Developer
-
-Made with ❤️ using Vue.js
-
----
-
+Free to use for personal and commercial projects.--
 **Note:** Ini adalah clone untuk tujuan pembelajaran. Desain dan konsep milik Telegram.
 
 🚀 Coba Sekarang:
